@@ -12,10 +12,14 @@ const forecast = (latitude, longtitude, callback) => {
         else {
 
             const outsideTemperature = body.current.temperature;
-            const feelsLike = body.current.feelslike
+            const feelsLike = body.current.feelslike;
+            const humidity = body.current.humidity;
+            const wind_speed = body.current.wind_speed
             callback(undefined, {
                 outsideTemperature,
-                feelsLike
+                feelsLike,
+                humidity,
+                wind_speed
             })
 
         }

@@ -24,7 +24,7 @@ searchForm.addEventListener('submit', (e) => {
             else {
                 
                 messageOne.textContent = data.location
-                messageTwo.textContent = 'OutSide Temperature : ' + data.temperature.outsideTemperature + '  Feels like : '+data.temperature.feelsLike
+                messageTwo.textContent = 'OutSide Temperature : ' + data.temperature.outsideTemperature + ' Feels like : '+data.temperature.feelsLike +" humidity :"+data.temperature.humidity +" wind-speed : "+ data.temperature.wind_speed
                 
                 }
 
