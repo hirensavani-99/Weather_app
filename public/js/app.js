@@ -13,7 +13,7 @@ searchForm.addEventListener('submit', (e) => {
     messageOne.textContent = 'Loading...'
     messageTwo.textContent = ''
 
-    fetch('http://localhost:3000/wether?adress=' + location).then((res) => {
+    fetch('/wether?adress=' + location).then((res) => {
         res.json().then((data) => {
 
             if (data.error) {

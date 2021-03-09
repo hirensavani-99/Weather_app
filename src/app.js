@@ -5,6 +5,7 @@ const forecast = require('./utils/forecast')
 const geocode = require('./utils/geocode')
 
 const app = express()
+const port = process.env.PORT || 3000
 
 const publicDirectoryPath = path.join(__dirname, '../public')
 const partialPath = path.join(__dirname, '../partial')
@@ -28,7 +29,7 @@ app.get('/about', (req, res) => {
 
 app.get('/help', (req, res) => {
     res.render('help', {
-        title:'Help',
+        title: 'Help',
         message: 'helping...',
         name: 'hiren'
     })
@@ -44,11 +45,11 @@ app.get('/wether', (req, res) => {
 
     geocode(req.query.adress, (error, { latitude, longtitude, location } = {}) => {
         if (error) {
-            return res.send({error})
+            return res.send({ error })
         }
         forecast(latitude, longtitude, (error, forecastData) => {
             if (!forecastData) {
-                return res.send({error})    
+                return res.send({ error })
             }
             res.send({
                 place: req.query.adress,
@@ -79,6 +80,6 @@ app.get('*', (req, res) => {
 
 
 
-app.listen(3000, () => {
-    console.log('server is up on port 3000');
+app.listen(port, () => {
+    console.log('server is up on port '+ port);
 })
