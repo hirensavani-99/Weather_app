@@ -12,9 +12,18 @@ body{
 
 .main-content{
     flex-grow: 1;
-    
+    background-image: url("../img/img2.jpeg") ;
+    background-repeat: no-repeat;
+    background-size: 100% 100%;
+    position: relative;
+    z-index: -1;
 }
 
+
+.main-content1{
+    flex-grow: 1;
+  
+}
 footer{
     color: #888888;
     border-top: 1px solid #eeeeee;
@@ -36,6 +45,10 @@ header a{
     color: #888888;
     margin-right: 16px;
     text-decoration: none;
+    padding: 12px 10px;
+    background-color: black;
+    border-radius: 10%;
+    
 }
 
 .portrait{
@@ -54,4 +67,9 @@ button{
     background: #888888;
     color: white;
     padding: 8px;
+}
+
+.m1{
+    font-weight: bold;
+    padding: 10px;
 }
