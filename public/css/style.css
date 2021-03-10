@@ -10,20 +10,40 @@ body{
 
 }
 
+
+
 .main-content{
     flex-grow: 1;
-    background-image: url("../img/img2.jpeg") ;
+    background-image: url("../img/weather1.jpg")   ;
     background-repeat: no-repeat;
     background-size: 100% 100%;
     position: relative;
     z-index: -1;
+    
 }
-
 
 .main-content1{
     flex-grow: 1;
+    opacity: 1;
+    z-index: 1;
   
 }
+
+.message-container{
+    display: block;
+    background-color: cornflowerblue;
+    padding: 10px;
+    border-radius: 10%;
+}
+
+
+.message-container .m1{
+    display: block;
+    background-color:#8888;
+    border-radius: 4%;
+    height: 14px;
+}
+
 footer{
     color: #888888;
     border-top: 1px solid #eeeeee;
@@ -42,11 +62,11 @@ h1{
 }
 
 header a{
-    color: #888888;
+    color: black;
     margin-right: 16px;
     text-decoration: none;
     padding: 12px 10px;
-    background-color: black;
+    background-color:#888888;
     border-radius: 10%;
     
 }
@@ -67,6 +87,12 @@ button{
     background: #888888;
     color: white;
     padding: 8px;
+}
+
+button:hover,
+header a:hover{
+    color: #888888;
+    background-color: black;
 }
 
 .m1{
