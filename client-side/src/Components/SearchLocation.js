@@ -26,7 +26,7 @@ const SearchLocation = () => {
     }
     const OnformSubmission = (event) => {
         event.preventDefault()
-        axios('/wether?adress=' + location)
+        axios('localhost:5000/wether?adress=' + location)
             .then((res) =>
 
                 setdata((prevState) => {
