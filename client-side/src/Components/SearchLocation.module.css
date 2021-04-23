@@ -1,0 +1,48 @@
+body{
+    position: relative;
+    background-color: azure;
+}
+
+.formcl{
+    padding: 25px;
+   
+    margin: 20px;
+}
+
+.infield{
+    flex-grow: 1;
+    opacity: 1;
+    z-index: 1;
+}
+
+.infield input{
+    border:1px solid #cccccc;
+    padding: 8px;
+}
+
+.infield button{
+    cursor: pointer;
+    border:1px solid #888888;
+    background: #888888;
+    color: white;
+    padding: 8px;
+
+}
+
+.infield button:hover{
+    color: #888888;
+    background-color: black;
+
+}
+
+.fullData{
+    border: 1px solid black;
+    padding: 10px;
+    margin-left: 25%;
+    margin-right: 25%;  
+}
+
+.fullData > h4{
+    background-color: white;
+   
+}

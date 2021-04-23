@@ -3,9 +3,12 @@ const express = require('express')
 const hbs = require('hbs')
 const forecast = require('./utils/forecast')
 const geocode = require('./utils/geocode')
+const cors = require('cors');
 
 const app = express()
-const port = process.env.PORT || 3000
+const port = process.env.PORT || 5000
+
+app.use(cors({origin: true, credentials: true}));
 
 const publicDirectoryPath = path.join(__dirname, '../public')
 const partialPath = path.join(__dirname, '../partial')
