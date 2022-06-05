@@ -1,8 +1,8 @@
-body{
-    color:#333333;
+body {
+    color: #333333;
     font-family: arial;
     max-width: 650px;
-    margin: 0 auto;
+    margin: 0 30%;
     padding: 0 16px;
     display: flex;
     flex-direction: column;
@@ -12,27 +12,35 @@ body{
 
 
 
-.main-content{
+.main-content {
     flex-grow: 1;
-    background-image: url("../img/weather1.jpg")   ;
+    background-image: url("../img/weather1.jpg");
     background-repeat: no-repeat;
     background-size: 100% 100%;
     position: relative;
     z-index: -1;
-    
+    color: #333333;
+    font-family: arial;
+    max-width: 650px;
+    margin: 0 30%;
+    padding: 0 16px;
+    display: flex;
+    flex-direction: column;
+    min-height: 100vh;
+
 }
 
-.main-content1{
+.main-content1 {
     flex-grow: 1;
     opacity: 1;
     z-index: 1;
-  
+
 }
 
-.message-container{
+.message-container {
     display: flex;
     flex-flow: column wrap;
-    
+
     flex-direction: row;
     justify-content: space-evenly;
     border-radius: 10%;
@@ -41,7 +49,7 @@ body{
 }
 
 
-.message-container .m1{
+.message-container .m1 {
     display: block;
     border-radius: 1%;
     border: 1px solid #888888;
@@ -51,65 +59,65 @@ body{
 
 
 
-   
+
 
 }
 
-footer{
+footer {
     color: #888888;
     border-top: 1px solid #eeeeee;
     margin-top: 16px;
     padding: 16px 0;
-}   
+}
 
-header{
+header {
     margin-top: 16px;
     margin-bottom: 48px;
 }
 
-h1{
+h1 {
     font-size: 64px;
     margin-bottom: 16px;
 }
 
-header a{
+header a {
     color: black;
     margin-right: 16px;
     text-decoration: none;
     padding: 12px 10px;
     border-radius: 10%;
     background-color: #888888;
-    
+
 }
 
-.portrait{
+.portrait {
     width: 250px;
 }
 
 
-input{
-    border:1px solid #cccccc;
+input {
+    border: 1px solid #cccccc;
     padding: 8px;
 }
 
-button{
+button {
     cursor: pointer;
-    border:1px solid #888888;
+    border: 1px solid #888888;
     background: #888888;
     color: white;
     padding: 8px;
 }
 
 button:hover,
-header a:hover{
+header a:hover {
     color: #888888;
     background-color: black;
 }
 
 
 
-@media(max-width: 6800px){
-    .message-container{
+@media(max-width: 6800px) {
+    .message-container {
         flex-direction: column;
         box-sizing: border-box;
         width: calc(1/2*100%-(1-1/3)*30px);
